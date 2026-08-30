@@ -1,4 +1,3 @@
-# ai-learning-roadmap
 # AI Learning Roadmap
 
 > 目标：持续记录“准备学什么、已经学了什么、接下来学什么”，形成一条可以长期回看的 AI 理论学习主线。
