@@ -1,110 +1,26 @@
 # AI Learning Roadmap
 
-> 目标：持续记录“准备学什么、已经学了什么、接下来学什么”，形成一条可以长期回看的 AI 理论学习主线。
+> 本仓库用于记录适合公开的 AI 理论学习路线、阶段进展与个人的通用知识理解。
 
-最后更新：2026-08-30
+## 理论学习三大主线
 
-## 当前状态
-
-### 1. 信息论与 MDL
-
-状态：🟡 学习中
-
-已经接触：
-
-* 信息论与机器学习之间的关系
-* 正则化、模型复杂度与 MDL 的联系
-* Kolmogorov Complexity 的基本思想
-
-接下来：
-
-* 信息量为什么是 `-log p`
-* 熵 Entropy
-* 交叉熵 Cross-Entropy
-* KL Divergence
-* 最大似然与负对数似然
-* 从信息论重新理解 Cross-Entropy Loss
-* MDL 的两部分编码：模型 + 数据
-* MDL、贝叶斯方法与正则化之间的关系
-
-目标：
-能够解释“为什么更短的描述可能意味着更好的泛化”，并明确这一说法成立的条件和边界。
+1. **信息论与 MDL (Minimum Description Length)**
+2. **Machine Learning Theory (泛化、假设空间、统计学习理论)**
+3. **Deep Learning Theory (表示学习、优化、Transformer 架构)**
 
 ---
 
-### 2. Machine Learning Theory
+## 快速入口
 
-状态：🟡 已接触部分概念，尚未系统学习
-
-已经接触：
-
-* Loss
-* 梯度下降
-* 学习率
-* 反向传播的基本思想
-* 正则化
-* 泛化问题
-
-接下来：
-
-* 经验风险与真实风险
-* 训练误差与测试误差
-* 假设空间
-* 模型容量
-* Bias–Variance
-* Overfitting / Underfitting
-* Regularization
-* 数据泄漏与可靠实验
-* 泛化为什么可能发生
-* 泛化界、PAC / VC 等理论的基本思想
-
-目标：
-不仅会训练模型，还能判断一个机器学习结论为什么可信，以及证据允许我们声称什么。
+- 🎯 **学习路线唯一真源**：查看 [`ROADMAP.md`](./ROADMAP.md)（维护当前状态、近期优先级与下一步学习目标）
+- 📝 **理论专题目录**：
+  - `information-theory-mdl/`：信息论、熵、MDL 专题
+  - `machine-learning-theory/`：泛化、经验风险、模型容量专题
+  - `deep-learning-theory/`：深度表示、非线性、注意力机制专题
 
 ---
 
-### 3. Deep Learning Theory
+## 仓库维护与隔离原则
 
-状态：⚪ 尚未系统开始
-
-接下来：
-
-* 神经元、层与参数
-* 为什么纯线性网络没有深度意义
-* Activation Function
-* Representation
-* Forward Propagation
-* Backpropagation
-* Optimization
-* Initialization
-* Normalization
-* Residual Connection
-* Attention
-* Transformer
-* Scaling 与现代大模型训练的基本原理
-
-目标：
-从“会调用神经网络”逐步走到能够解释现代深度学习系统为什么这样设计。
-
----
-
-## 当前优先级
-
-近期顺序：
-
-1. 熵 → 交叉熵 → KL Divergence → 最大似然
-2. 完成 MDL 主线
-3. 建立机器学习泛化理论框架
-4. 从“为什么需要非线性”正式进入深度学习理论
-
-原则：
-
-* 不为了覆盖知识点而学习。
-* 新知识必须尽量连接到已有问题。
-* 区分“API / 约定，需要先知道”和“可以从原理推出的结论”。
-* 每完成一个主题，记录：
-
-  * 我现在能解释什么？
-  * 哪些结论有证据？
-  * 哪些地方仍然不确定？
-  * 下一步最自然的问题是什么？
+- **唯一真源原则**：`ROADMAP.md` 统一维护理论学习计划、当前状态与下一步目标，避免多处维护导致状态不同步。
+- **公开边界**：本仓库只记录个人推导、总结与通用理论笔记；所有课程作业、实验原稿及工程代码均在私密仓库 `python-ml-study` 中独立维护。
